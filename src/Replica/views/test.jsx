@@ -1,31 +1,41 @@
-import React from 'react'
-import { Carousel } from 'antd';
+import React from 'react';
+import { Card, Button, CardTitle, CardText } from 'reactstrap';
 
-function onChange(a, b, c) {
-  console.log(a, b, c);
-}
+const Test = (props) => {
+  return (
+    <div>
+      <Card body outline color="secondary">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button>Button</Button>
+      </Card>
+      <Card body outline color="primary">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button color="secondary">Button</Button>
+      </Card>
+      <Card body outline color="success">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button color="secondary">Button</Button>
+      </Card>
+      <Card body outline color="info">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button color="secondary">Button</Button>
+      </Card>
+      <Card body outline color="warning">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button color="secondary">Button</Button>
+      </Card>
+      <Card body outline color="danger">
+        <CardTitle>Special Title Treatment</CardTitle>
+        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+        <Button color="secondary">Button</Button>
+      </Card>
+    </div>
+  );
+};
 
-class Caro extends React.Component{
-    render(){
-        return(
-            <>
-            <Carousel afterChange={onChange}>
-    <div>
-      <h3>1</h3>
-    </div>
-    <div>
-      <h3>2</h3>
-    </div>
-    <div>
-      <h3>3</h3>
-    </div>
-    <div>
-      <h3>4</h3>
-    </div>
-  </Carousel>
-  </>
-        )
-    }
-
-}
-export default Caro
+export default Test

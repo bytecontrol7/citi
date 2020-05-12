@@ -43,7 +43,7 @@ class Index extends React.Component{
       pull2: false,
       pull3: false,
       pull4: false,
-      over1: false,
+      pull5: false,
       activeIndex: 0,
       animating: false
         
@@ -84,6 +84,14 @@ class Index extends React.Component{
     pullerOff4 = (e) => {
       e.stopPropagation()
       this.setState({pull4: false})
+    }
+    puller5 = (e) => {
+      e.stopPropagation()
+      this.setState({pull5:true})
+    }
+    pullerOff5 = (e) => {
+      e.stopPropagation()
+      this.setState({pull5: false})
     }
 
   
@@ -262,21 +270,24 @@ class Index extends React.Component{
             }
                {this.state.pull5 &&
            <div className="" style={{background: "lightgrey", color:'black'}}>
-             
            <div className="row">
-             <div className="col-md-3 pt-5 pb-5">
-               <h4 className="font-weight-bold text-black">PENSION</h4>
-               <p>Public & Private Sector Pension</p>
-               <p>Micro Pension</p>
-              
+             <div className="col-md-6 d-flex justify-content-center align-items-center">
+               <h4 class="title text-black">PENSION</h4>
+             </div>
+             <div className="col-md-6 text-black">
+             <div class="pt-5">
+             <div className="content1">
+             <p className="pl-5">Public & Private Sector Pension</p>
+             <p  className="pl-5">Micro Pension</p>
+             
+               </div>
+             
              </div>
              
-            
-            
-            
-            
+             <br />
+             <br />
+             </div>
            </div>
-            
          </div>
             }
             <div className="row">

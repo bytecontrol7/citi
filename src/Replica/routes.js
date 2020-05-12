@@ -8,6 +8,7 @@ import Register from './views/register';
 import Dashboard from './views/dashboard';
 import African_Presence from './views/african_presence';
 import About from './views/about';
+import Test from './views/test'
 
 class Eco extends React.Component{
     render(){

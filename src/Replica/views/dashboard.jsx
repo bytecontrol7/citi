@@ -51,14 +51,14 @@ class Dashboard extends React.Component{
             <div className="account-nav mb-0">
             <Row>
       <Col md="12">
-        <Card body inverse style={{ backgroundColor: '#fff', borderColor: '#fff' }}>
+        <Card   body inverse style={{ backgroundColor: '#fff', borderColor: '#fff' }}>
         <div className="d-flex justify-content-between align-items-center">
         <CardTitle className="text-info font-weight-bold">Hello Tomiwa</CardTitle>
           <CardTitle className="text-info font-weight-bold"><i className="fa fa-home fa-2x" onClick={this.home}></i></CardTitle>
         </div>
          
           <Row>
-              <Col md="3">
+              <Col md="3" class="account_border">
               <Card body inverse style={{ backgroundColor: ' #222222', borderColor: ' #222222' }}>  
               <CardTitle  className="h5 pt-4 text-center">Insurance Policy?</CardTitle>
         <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Existing Account</p>
@@ -123,6 +123,8 @@ class Dashboard extends React.Component{
            
             
             </div>
+
+            
           
             {/* <section className="section-dash pt-5 pb-5">
            <div className="row">
