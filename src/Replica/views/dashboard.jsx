@@ -101,7 +101,7 @@ class Dashboard extends React.Component{
     </Row>
     <Row >
       <Col md="12">
-        <Card body inverse style={{ backgroundColor: 'lightgrey', borderColor: 'lightgrey' }}>
+        <Card body inverse style={{ backgroundColor: 'lwhite', borderColor: 'white' }}>
           <CardTitle className="pro_title font-weight-bold">RECENT ONLINE TRANSACTIONS</CardTitle>
           <div className="card bg-light">
           <CardText className="pro_title py-4 pl-4">You have no recent online transactions.</CardText>
