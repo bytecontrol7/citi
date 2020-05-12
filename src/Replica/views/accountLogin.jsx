@@ -19,7 +19,7 @@ class AccountLogin extends React.Component{
         return(
             <>
             <div className="">
-            <div className="sub-header pt-3">
+            <div className="sub-header pt-3 fixed-top">
             <p className="pr-3">Personal</p>
             <p className="pr-3">|</p>
             <p className="pr-3"> Bussiness</p>

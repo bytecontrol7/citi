@@ -103,6 +103,11 @@ class Index extends React.Component{
 
         return(
             <>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              
+            </nav>
+            <div className="fixed-top pb-0" style={{overflow: 'hidden'}}>
+            <div className="fixed-top mt-0" style={{overflow: 'hidden'}}>
             <div className="sub-header pt-3">
             <p className="pr-3">Personal</p>
             <p className="pr-3">|</p>
@@ -122,10 +127,15 @@ class Index extends React.Component{
             </div>
             </div>
            
-            <div className="heading">
+            </div>
+            
+     
+            <br /><br />
+            
+            <div className="heading" style={{overflow: 'hidden'}}>
             <div className="row">
             <div className="col-md-1">
-            <img src={require('../images/logo.png')} alt="BANK LOGO" className="ml-5 my-2" width="90%" />
+            <img src={require('../images/logo.png')} alt="BANK LOGO" className="ml-5 pb-2" width="90%" />
             </div>
             <div className="col-md-10 offset-1">
               <div className="row">
@@ -149,8 +159,9 @@ class Index extends React.Component{
             </div>
             </div>
             </div>
+            </div>
             {this.state.pull1 &&
-              <div className="" style={{background: "lightgrey", color:'black', overflow: 'hidden'}} >
+              <div className="pt-5" style={{background: "lightgrey", color:'black', overflow: 'hidden'}} >
               <div className="row">
                 <div className="col-md-6 d-flex justify-content-center align-items-center">
                   <h4 class="title text-black">BANKING</h4>
@@ -177,7 +188,7 @@ class Index extends React.Component{
             </div>
             }
              {this.state.pull2  && 
-            <div className="" style={{background: "lightgrey", color:'black'}}>
+            <div className="pt-5" style={{background: "lightgrey", color:'black'}}>
               <div className="row">
                 <div className="col-md-6 d-flex justify-content-center align-items-center">
                   <h4 class="title text-black">BORROWING</h4>
@@ -204,7 +215,7 @@ class Index extends React.Component{
             </div> 
             }
              {this.state.pull3 &&
-           <div className="" style={{background: "lightgrey", color:'black'}}>
+           <div className="pt-5" style={{background: "lightgrey", color:'black'}}>
            <div className="row">
              <div className="col-md-6 d-flex justify-content-center align-items-center">
                <h4 class="title text-black">INVESTMENTS</h4>
@@ -230,7 +241,7 @@ class Index extends React.Component{
          </div>
             }
              {this.state.pull4 &&
-           <div className="" style={{background: "lightgrey", color:'black'}}>
+           <div className="pt-5" style={{background: "lightgrey", color:'black'}}>
              <div className="container">
            <div className="row">
              <div className="col-md-3 pt-5 pb-5">
@@ -269,7 +280,7 @@ class Index extends React.Component{
          </div>
             }
                {this.state.pull5 &&
-           <div className="" style={{background: "lightgrey", color:'black'}}>
+           <div className="pt-5" style={{background: "lightgrey", color:'black'}}>
            <div className="row">
              <div className="col-md-6 d-flex justify-content-center align-items-center">
                <h4 class="title text-black">PENSION</h4>
@@ -290,8 +301,9 @@ class Index extends React.Component{
            </div>
          </div>
             }
-            <div className="row">
-            <div className="container">
+            <br /><br />
+            <div className="row pt-5 mt-0 ml-0 mr-0">
+            <div className="container-fluid">
             <div className="col-md-12 borderCovid">
               <UncontrolledCarousel items={items} />
               </div>

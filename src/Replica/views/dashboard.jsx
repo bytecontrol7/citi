@@ -21,7 +21,7 @@ class Dashboard extends React.Component{
             <>
             <div className="">
             <div className="">
-            <div className="sub-header pt-3">
+            <div className="sub-header pt-3 fixed-top">
             <p className="pr-3 pl-0">Personal Banking</p>
             <p className="pr-3">|</p>
             <p className="pr-3">Commercial Banking</p>
@@ -37,9 +37,9 @@ class Dashboard extends React.Component{
             </div>
      
             </div>
-            <div className="container">
+            <div className="container pt-4">
             <div className="account-nav pb-5 mb-0">
-            <div className="d-flex justify-content-start align-items-center">
+            <div className="d-flex pt-2 justify-content-start align-items-center">
             <p className="mr-auto pl-4 pt-0 mt-0 font-weight-bold"><img src={require('../images/logo.png')} alt="BANK LOGO" width="28%" /></p>
             <p className="pt-3 pb-3 font-weight-bold pr-4">ALL CONTRACTS</p>
             <p className="pt-3 pb-3 font-weight-bold pr-4">PROTECTIONS AND SAVINGS</p>

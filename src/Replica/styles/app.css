@@ -29,7 +29,7 @@
 .sub-header{
     background-color: #222222;
     border: 3px solid #222222;
-    height: 36px;
+    height: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -79,8 +79,8 @@
 }
 
 .borderCovid{
-    height: 350px;
-   
+    height: 450px;
+    width: inherit;
     overflow: hidden;
 }
 
