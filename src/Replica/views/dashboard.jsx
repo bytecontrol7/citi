@@ -21,7 +21,7 @@ class Dashboard extends React.Component{
             <>
             <div className="">
             <div className="">
-            <div className="sub-header pt-2">
+            <div className="sub-header pt-3">
             <p className="pr-3 pl-0">Personal Banking</p>
             <p className="pr-3">|</p>
             <p className="pr-3">Commercial Banking</p>
@@ -51,43 +51,43 @@ class Dashboard extends React.Component{
             <div className="account-nav mb-0">
             <Row>
       <Col md="12">
-        <Card   body inverse style={{ backgroundColor: '#fff', borderColor: '#fff' }}>
+        <Card   body inverse style={{ backgroundColor: 'whitesmoke', borderColor: 'lwhitesmoke' }}>
         <div className="d-flex justify-content-between align-items-center">
-        <CardTitle className="text-info font-weight-bold">Hello Tomiwa</CardTitle>
-          <CardTitle className="text-info font-weight-bold"><i className="fa fa-home fa-2x" onClick={this.home}></i></CardTitle>
+        <CardTitle className="text-primary font-weight-bold">Hello Tomiwa</CardTitle>
+          <CardTitle className="pro_title font-weight-bold"><i className="fa fa-home fa-2x" onClick={this.home}></i></CardTitle>
         </div>
          
           <Row>
               <Col md="3" class="account_border">
               <Card body inverse style={{ backgroundColor: ' #222222', borderColor: ' #222222' }}>  
-              <CardTitle  className="h5 pt-4 text-center">Insurance Policy?</CardTitle>
-        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Existing Account</p>
+              <CardTitle  className="h5 pt-4 text-center">Insurance</CardTitle>
+        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Account</p>
       </Card>
               
               </Col>
               <Col md="3">
               <Card body inverse style={{ backgroundColor: ' #da251c', borderColor: ' #da251c' }}>
              
-        <CardTitle  className="p pt-4 h5 text-center">No Health Plan?</CardTitle>
+        <CardTitle  className="p pt-4 h5 text-center">Banking</CardTitle>
         
-        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Existing Account</p>
+        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Account</p>
       </Card>
               
               </Col>
 
               <Col md="3">
               <Card body inverse style={{ backgroundColor: '#017cc2', borderColor: '#017cc2' }}>
-        <CardTitle  className="p pt-4 h5 text-center"> Investment Account?</CardTitle> 
+        <CardTitle  className="p pt-4 h5 text-center"> Investment </CardTitle> 
        
-        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Existing Account</p>
+        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Account</p>
       </Card>
               
               </Col>
               <Col md="3">
               <Card body inverse style={{ backgroundColor: '#e67817', borderColor: '#e67817' }}>
-              <CardTitle className="p pt-4 h5 text-center">No FPA Account?</CardTitle>
+              <CardTitle className="p pt-4 h5 text-center">Pension</CardTitle>
       
-        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Existing Account</p>
+        <p className="text-center pt-3"><i className="fa fa-plus-circle pr-1"></i>Add Account</p>
       </Card>
               
               </Col>
@@ -99,21 +99,21 @@ class Dashboard extends React.Component{
       </Col>
      
     </Row>
-    <Row>
+    <Row >
       <Col md="12">
-        <Card body>
-          <CardTitle className="text-info font-weight-bold">RECENT ONLINE TRANSACTIONS</CardTitle>
+        <Card body inverse style={{ backgroundColor: 'lightgrey', borderColor: 'lightgrey' }}>
+          <CardTitle className="pro_title font-weight-bold">RECENT ONLINE TRANSACTIONS</CardTitle>
           <div className="card bg-light">
-          <CardText className="text-info py-4 pl-4">You have no recent online transactions.</CardText>
+          <CardText className="pro_title py-4 pl-4">You have no recent online transactions.</CardText>
           </div>
         
-          <CardTitle className="pt-4 text-info font-weight-bold">CONTRIBUTIONS AND ADDITIONAL PREMIUM POLICIES</CardTitle>
+          <CardTitle className="pt-4 pro_title font-weight-bold">CONTRIBUTIONS AND ADDITIONAL PREMIUM POLICIES</CardTitle>
           <div className="card bg-light">
-          <CardText className="text-info py-4 pl-4">No policy available.</CardText>
+          <CardText className="pro_title py-4 pl-4">No policy available.</CardText>
           </div>
-          <CardTitle className="pt-4 text-info font-weight-bold">RENEWALS DUE</CardTitle>
+          <CardTitle className="pt-4 pro_title font-weight-bold">RENEWALS DUE</CardTitle>
           <div className="card bg-light">
-          <CardText className="text-info py-4 pl-4">No policy due for renewal.</CardText>
+          <CardText className="text-mute py-4 pl-4">No policy due for renewal.</CardText>
           </div>
         </Card>
       </Col>
